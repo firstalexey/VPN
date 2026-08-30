@@ -3,6 +3,4 @@
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
 vless://e1299012-3d27-4b7f-99d5-25ccb7c63220@95.85.228.30:443?encryption=none&fp=firefox&host=www.google.com&path=/&pbk=sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE&security=reality&sni=www.google.com&type=xhttp#FirstAlexVPN
-vless://a210cb80-f379-44e9-a103-97ba59357a46@94.183.208.4:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnod12x.artemida.live&type=tcp#FirstAlexVPN
-vless://a210cb80-f379-44e9-a103-97ba59357a46@31.59.39.209:8443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnod18x.artemida.live&type=tcp#FirstAlexVPN
-vless://d2aeb078-90db-4f90-b334-623bcbea8d31@144.31.237.76:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=xxqv2JF09vb9H5GUrGXvXZx46-dlNtNvdTNgOe_W1A0&security=reality&sid=da8198896a34e6ec&sni=cdnjs.cloudflare.com&type=tcp#FirstAlexVPN
+vless://d3815c21-ef06-43e2-82e1-ca313962b489@50.7.95.172:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=2e9dGid5D-e4demAVGqU71uEeusuBhviikchaJ96E3o&security=reality&sid=8ece2039&sni=app47.jarvestip.ru&type=tcp#FIRSTALEXVPN
