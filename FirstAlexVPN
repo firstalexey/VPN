@@ -3,4 +3,4 @@
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
 vless://e1299012-3d27-4b7f-99d5-25ccb7c63220@95.85.228.30:443?encryption=none&fp=firefox&host=www.google.com&path=/&pbk=sJTPQLMDCyPAbRcaJM-P8Y3_xRVpEEGrvv-kkIuIuQE&security=reality&sni=www.google.com&type=xhttp#FirstAlexVPN
-vless://ae8e0f7d-b661-41ca-b55d-d8c383adb2f8@37.49.224.173:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE&security=reality&sid=ff776ff77be48b88&sni=nl8.helper-internet.com&type=tcp#🇳🇱 Нидерланды 159 ESTOXY OU
+vless://ae8e0f7d-b661-41ca-b55d-d8c383adb2f8@37.49.224.173:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE&security=reality&sid=ff776ff77be48b88&sni=nl8.helper-internet.com&type=tcp#firstalexvpn
