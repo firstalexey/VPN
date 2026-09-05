@@ -2,5 +2,5 @@
 #profile-update-interval: 1
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
-Corporation
+
 vless://b89196b1-7b72-4b81-83d0-e4d4df79f678@2.27.201.153:443?encryption=none&fp=firefox&pbk=lbktagkdektK-9Ow1gSqCtQcd_Xo7oYH3WJ-gOHUpwQ&security=reality&sid=d6733d5eb4acca42&sni=nl.yabloko.top&type=tcp#vpn
