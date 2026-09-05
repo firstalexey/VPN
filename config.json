@@ -1,0 +1,174 @@
+{
+  "remarks": "LTE Youtube | RU direct | no stats",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "queryStrategy": "UseIPv4",
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"]
+      }
+    },
+    {
+      "tag": "http",
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {},
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "unk-lte-yt-ru-10-direct.powerhost.pro",
+            "port": 9443,
+            "users": [
+              {
+                "id": "a58b1897-aa51-46ac-b5e1-77c3fba1ac03",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "eh.vk.com",
+          "fingerprint": "firefox",
+          "publicKey": "1mD_Kt4W0CJIPCd2-ZRXKvG_VhnrmbRlmQlxqBz-MAg",
+          "shortId": "563f64c7a0a93bf0",
+          "spiderX": "/",
+          "show": false
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "domainMatcher": "hybrid",
+    "rules": [
+      {
+        "type": "field",
+        "protocol": ["bittorrent"],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "regexp:.*\\.ru$",
+          "regexp:.*\\.рф$",
+          "regexp:.*\\.su$"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "keyword:vk",
+          "keyword:ok.ru",
+          "keyword:odnoklassniki",
+          "keyword:mail.ru",
+          "keyword:gosuslugi",
+          "keyword:nalog",
+          "keyword:mos.ru",
+          "keyword:ozon",
+          "keyword:wildberries",
+          "keyword:wb.ru",
+          "keyword:avito",
+          "keyword:yandex",
+          "keyword:ya.ru",
+          "keyword:yastatic",
+          "keyword:sber",
+          "keyword:tinkoff",
+          "keyword:tbank",
+          "keyword:vtb",
+          "keyword:alfabank",
+          "keyword:mts",
+          "keyword:megafon",
+          "keyword:beeline",
+          "keyword:tele2",
+          "keyword:rutube",
+          "keyword:dzen",
+          "keyword:kinopoisk",
+          "keyword:hh.ru",
+          "keyword:2gis",
+          "keyword:cdek",
+          "keyword:pochta",
+          "keyword:rzd",
+          "keyword:rustore",
+          "geosite:category-ru",
+          "geosite:category-gov-ru",
+          "geosite:yandex",
+          "geosite:vk",
+          "geosite:mailru"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:ru", "geoip:private"],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
