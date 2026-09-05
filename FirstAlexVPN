@@ -2,4 +2,5 @@
 #profile-update-interval: 1
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
-vless://c6037cf7-d931-4027-af06-6bfb0f10684c@147.45.111.103:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=rWpM1YULmwcQynCxVoOo-Nw7BCPlC7LjD1_ou_vWsGo&security=reality&sid=04e35a9e&sni=www.samsung.com&type=tcp#ВПН
+Corporation
+vless://b89196b1-7b72-4b81-83d0-e4d4df79f678@2.27.201.153:443?encryption=none&fp=firefox&pbk=lbktagkdektK-9Ow1gSqCtQcd_Xo7oYH3WJ-gOHUpwQ&security=reality&sid=d6733d5eb4acca42&sni=nl.yabloko.top&type=tcp#vpn
