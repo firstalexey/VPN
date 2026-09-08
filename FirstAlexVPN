@@ -2,5 +2,4 @@
 #profile-update-interval: 1
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
-vless://a58b1897-aa51-46ac-b5e1-77c3fba1ac03@unk-lte-yt-ru-10-direct.powerhost.pro:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=firefox&pbk=1mD_Kt4W0CJIPCd2-ZRXKvG_VhnrmbRlmQlxqBz-MAg&sid=563f64c7a0a93bf0&type=tcp&headerType=none#vpn
-vless://a58b1897-aa51-46ac-b5e1-77c3fba1ac03@unk-lte-yt-ru-10-direct.powerhost.pro:9443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=eh.vk.com&fp=firefox&pbk=1mD_Kt4W0CJIPCd2-ZRXKvG_VhnrmbRlmQlxqBz-MAg&sid=563f64c7a0a93bf0&type=tcp&headerType=none#vpn 
+vless://2a88deea-221d-3f06-9846-4067c6f725ee@191.40.32.85:10004?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=YoLRlSFCOiQjky1hQVHuSkiaPER4pro1uDyCTHVSfwY&security=reality&sid=df52dd28ff&sni=www.intel.com&type=tcp#vpn
