@@ -2,4 +2,4 @@
 #profile-update-interval: 1
 #profile-title: FirstAlexVPN
 #subscription-userinfo: upload=0; download=0; total=0; expire=0
-vless://2a88deea-221d-3f06-9846-4067c6f725ee@191.40.32.85:10004?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=YoLRlSFCOiQjky1hQVHuSkiaPER4pro1uDyCTHVSfwY&security=reality&sid=df52dd28ff&sni=www.intel.com&type=tcp#vpn
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@91.224.87.22:9873?encryption=none&fp=firefox&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&security=reality&serviceName=grpc-tunnel&sid=aabb&sni=dl.google.com&type=grpc#впн
